@@ -122,10 +122,44 @@
       <input class="btn-primary"type="submit" value="Submit">
     </form>
 
+  </div>
+</div>
+</div>
+    
 
+      
+      <form action="/action_page.php">
+      <label for="homepage">Add your homepage:</label>
+      <input type="url" id="homepage" name="homepage">
+      <input type="submit" value="Submit">
+    </form>
+    
+
+<div id ="xyz" class ="mainform">
+  <p  id="paragraph1">Link URL</p>
+  <p id="paragraph2">Link URL</p>
+
+  <button onClick="updatecolor()">Change color</button>
+
+</div>
+
+
+<!-- <script src ="index.js"></script>
+<script lang ="text/javascript">
+  function updatecolor(){
+    var para1 = document.getElementById("paragraph1");
+    para1.innderText= "Hello";
+
+    var para2= document.getElemenetByID("paragraph2");
+    para2.setAttribute("style", "color:red");
+  }
+
+</script>
+-->
 
 <script src ="index.js"></script>
 <script lang ="text/javascript">
+console.log("hi");
 function checkLinks( code, searchString )
 {
 
@@ -149,39 +183,9 @@ function checkLinks( code, searchString )
         }
     }
 
-    return url;
-}
-</script>
-
-  </div>
-  </div>
-</div>
-
-<div id ="xyz" class ="mainform">
-  <p  id="paragraph1">Link URL</p>
-  <p id="paragraph2">Link URL</p>
-
-  <button onClick="updatecolor()">Change color</button>
-
-</div>
-
-<script src ="index.js"></script>
-<script lang ="text/javascript">
-  function updatecolor(){
-    var para1 = document.getElementById("paragraph1");
-    para1.innderText= "Hello";
-
-    var para2= document.getElemenetByID("paragraph2");
-    para2.setAttribute("style", "color:red");
-  }
-
-</script>
-
-<form action="/action_page.php">
-  <label for="homepage">Add your homepage:</label>
-  <input type="url" id="homepage" name="homepage">
-  <input type="submit" value="Submit">
-</form>
+    return url; 
+    }
+    </script>
 
 
     <!-- Optional JavaScript -->
@@ -190,6 +194,6 @@ function checkLinks( code, searchString )
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   
-    <script src ="index.js"></script>
+   <!-- <script src ="index.js"></script> --> 
   </body>
 </html>
