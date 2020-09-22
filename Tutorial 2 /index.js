@@ -6,7 +6,7 @@ function addprevent(event) {
     let img = `<img width="250" height="400"alt="picture" src="` + url + `" class="img-fluid float-left" />`;
 
     document.getElementById("mycol").innerHTML += img;
-    (null).innerHTML+=img;
+   
 
 }
 
