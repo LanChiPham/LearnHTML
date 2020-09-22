@@ -15,7 +15,7 @@
    
 
     <div class="container">
-      <h3 class="mbr-section-title display-2">Welcome</h3>
+      <h3 class="mbr-section-title display-2">Visit us to get heathy recipes!</h3>
 
       <div class="row">
         <div class="col-sm">
@@ -24,13 +24,10 @@
          <!-- <table>
             <thead>
               <tr> -->
-                
                 <div class="col-sm">
-                  <div class="elementor-image-box-content">
-                  <h3 class= "elementor-image-box-title">
             <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" data-size="1600x1067"></a>
               <img width="250" height="400" alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" class="img-fluid float-left">
-            </a></h3> </div></div>
+            </a> </div>
           
             <div class="col-sm">
             <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
@@ -102,86 +99,8 @@
     
       </div>
     </div>
-    <form>onsubmit="return addprevent(event);">
-      <div class="url-search-form">
-        <form role="search" method="get"></form>
-        <label for="basic-url">Link URL</label>
-        <input type="url" class="form-control" id="basic-url" aria-describedby="basic-url">
-    
-      </div>
-      <div class="form-group">
-        <label for="text">Name</label>
-        <input type="text" class="form-control" id="imgurl">
-      </div>
-      <div class="form-group form-check">
-        <input type="text" class="form-check-input" id="exampleCheck1">
-      </div>
-      <div class = "row">
-        <div> class ="col">
-      <!-- <button class="btn-primary" onClick="add_image();">Search</button> -->
-      <input class="btn-primary"type="submit" value="Submit">
-    </form>
-
-
-
-<script src ="index.js"></script>
-<script lang ="text/javascript">
-function checkLinks( code, searchString )
-{
-
-    var url;
-
-    // We need to create an HTML document element so we can use javascript dom functions on it.
-    var doc = document.createElement("html");
-    doc.innerHTML = code; // put the code into the document
-
-    // Get all  links in the code
-    var links = doc.getElementsByTagName("a")
-
-    // Loop over all links
-    for (var i=0; i<links.length; i++) {
-        
-        if(  links[i].getAttribute("href").indexOf(searchString) != -1 ) {
-            
-            url = links[i].getAttribute("href");
-            
-            break;
-        }
-    }
-
-    return url;
-}
-</script>
-
-  </div>
-  </div>
-</div>
-
-<div id ="xyz" class ="mainform">
-  <p  id="paragraph1">Link URL</p>
-  <p id="paragraph2">Link URL</p>
-
-  <button onClick="updatecolor()">Change color</button>
-
-</div>
-
-<script src ="index.js"></script>
-<script lang ="text/javascript">
-  function updatecolor(){
-    var para1 = document.getElementById("paragraph1");
-    para1.innderText= "Hello";
-
-    var para2= document.getElemenetByID("paragraph2");
-    para2.setAttribute("style", "color:red");
-  }
-
-</script>
-
-<form action="/action_page.php">
-  <label for="homepage">Add your homepage:</label>
-  <input type="url" id="homepage" name="homepage">
-  <input type="submit" value="Submit">
-</form>
+<div>
+  
 
 
     <!-- Optional JavaScript -->
@@ -189,7 +108,5 @@ function checkLinks( code, searchString )
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  
-    <script src ="index.js"></script>
   </body>
 </html>
