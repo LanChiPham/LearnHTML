@@ -3,25 +3,25 @@
  * @param {number} target
  * @return {number[]}
  */
-var nums = [3,2,4];
+var nums = [3, 2, 4];
 var target = 6;
 
 
 //var twoSum =  function(nums, target) { 
-    function twoSum(nums,target){
-    var result;
+const twoSum = function twoSum(nums, target) {
+    var result ;
 
-
-
-    // code o day 
-
-
-
-
-
+    for (var i = 0; i < nums.length; i++) {
+        for (var j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] == target) {
+                
+            }
+        }
+    }
+  
     return result;
 
-};
+}
 
-console.log(twoSum(nums,target));
+console.log(twoSum(nums, target));
 
