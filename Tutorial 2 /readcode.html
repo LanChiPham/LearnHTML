@@ -130,24 +130,24 @@
 
   <div>
     <div id="mycol">
+     <div id="demo">
 
-
+     </div> 
     </div>
   </div>
   <form onsubmit="return addprevent(event);">
+    
     <div class="url-search-form">
-
       <label for="basic-url">Link URL</label>
       <input type="url" class="form-control" id="imgurl" aria-describedby="basic-url">
-
     </div>
+    
     <div class="form-group">
       <label for="text">Name</label>
-      <input type="text" class="form-control" id="text">
+      <input type="text" class="form-control" id="myText">
     </div>
-    <div class="form-group form-check">
-      <input type="text" class="form-check-input" id="exampleCheck1">
-    </div>
+
+  
     <div class="row">
       <div class="col">
         <!-- <button class="btn-primary" onClick="add_image();">Search</button> -->
@@ -184,32 +184,30 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
   <script src="index.js"></script>
+
   <script lang="text/javascript">
-    console.log("hi");
-    function checkLinks(code, searchString) {
-
-      var url;
 
 
-      // We need to create an HTML document element so we can use javascript dom functions on it.
-      var doc = document.createElement("html");
-      doc.innerHTML = code; // put the code into the document
 
-      // Get all  links in the code
-      var links = doc.getElementsByTagName("a")
+    // We need to create an HTML document element so we can use javascript dom functions on it.
+    var doc = document.createElement("html");
+    doc.innerHTML = code; // put the code into the document
 
-      // Loop over all links
-      for (var i = 0; i < links.length; i++) {
+    // Get all  links in the code
+    var links = doc.getElementsByTagName("a")
 
-        if (links[i].getAttribute("href").indexOf(searchString) != -1) {
+    // Loop over all links
+    for (var i = 0; i < links.length; i++) {
 
-          url = links[i].getAttribute("href");
+      if (links[i].getAttribute("href").indexOf(searchString) != -1) {
 
-          break;
-        }
+        url = links[i].getAttribute("href");
+
+        break;
       }
+    }
 
-      return url;
+    return url;
     }
   </script>
 

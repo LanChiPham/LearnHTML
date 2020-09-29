@@ -3,10 +3,14 @@ function addprevent(event) {
     event.preventDefault();
 
     let url = document.getElementById("imgurl").value;
-    let img = `<img width="250" height="400"alt="picture" src="` + url + `" class="img-fluid float-left" />`;
+    let img = `<img width="250" height="400"alt="picture" src="` + url + `" class="img-fluid float-center" style="border:10px;margin:10px"/>`;
+    let x = document.getElementById("myText").value;
 
+          
+    
+    document.getElementById("demo").innerHTML = x;
     document.getElementById("mycol").innerHTML += img;
-   
+    
 
 }
 
